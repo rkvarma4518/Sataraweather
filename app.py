@@ -12,8 +12,8 @@ def temperature():
     r = s.get(url)
 
     #temperature and unit
-    temp = r.html.find("span#wob_tm", first=True).text
-    unit = r.html.find("div.vk_bk.wob-unit span.wob_t", first=True).text
+    temp = r.html.find("span.wob_t q8U8x", first=True).text
+    unit = r.html.find("div.vk_bk.vk_bk wob-unit", first=True).text
     # print(temp,unit)
 
     #humidity
