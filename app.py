@@ -7,7 +7,7 @@ def temperature():
     from requests_html import HTMLSession
     s= HTMLSession()
 
-    url = 'https://www.google.com/search?q=weather+satara&rlz=1C1CHBD_enIN930IN930&oq=weathersatara&aqs=chrome.1.69i57j0i10l6.7158j1j7&sourceid=chrome&ie=UTF-8'
+    url = 'https://www.google.com/search?q=weather+satara'
 
     r = s.get(url)
 
