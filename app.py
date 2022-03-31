@@ -29,7 +29,7 @@ def temperature():
     # print(perception)
 
     #wind flow rate
-    wind = r.html.find("span#wob_ws", first=True).text
+    wind = r.html.find("span#wob_ws.wob_t", first=True).text
     # print(wind)    
 
     return render_template('Temperature.html',variable1=temp,variable2=unit,variable3=humidity,variable4=desc,variable5=perception,variable6=wind)
